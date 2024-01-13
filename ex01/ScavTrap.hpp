@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 14:03:38 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/11 20:23:31 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/12 16:11:36 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ class ScavTrap: public ClapTrap{
         ScavTrap();
         ScavTrap(std::string name);
         ~ScavTrap();
+        void attack(const std::string& target);
         void guardGate();
-        // TODO: override attack();
 };

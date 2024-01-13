@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 18:40:31 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/11 19:58:49 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/13 11:15:56 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 #include "ScavTrap.hpp"
 
 int main (){
-    ScavTrap test;
     ClapTrap test2;
+    ScavTrap test;
+    ScavTrap test3(test);
 
-    test.guardGate();
-    test.attack("ClapTrap");
-    test.takeDamage(1);
-    test.beRepaired(1);
-    std::cout << "------------------------------------" << std::endl;
+    test2 = test;
     test2.attack("ClapTrap");
     test2.takeDamage(1);
     test2.beRepaired(1);
+    std::cout << "------------------------------------" << std::endl;
+    test.attack("ClapTrap");
+    test.takeDamage(1);
+    test.beRepaired(1);
+    test.guardGate();
 }

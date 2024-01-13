@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 13:41:59 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/11 13:59:01 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/13 11:06:53 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 int main (){
     ClapTrap a;
+    ClapTrap b(a);
+    ClapTrap p;
     
+    p = a;
     a.attack("ClapTrack");
-    a.beRepaired(1);
     a.takeDamage(1);
+    a.beRepaired(1);
 }

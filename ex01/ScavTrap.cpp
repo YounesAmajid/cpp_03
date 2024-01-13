@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 14:03:29 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/11 20:03:24 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/12 16:14:35 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,14 @@ ScavTrap::ScavTrap(): ClapTrap(){
     this->EnergyPoints = 100;
     this->EnergyPoints = 50;
     this->attackDamage = 20;
+}
+
+void    ScavTrap::attack(const std::string& target)
+{
+    if (HitPoints > 0 && EnergyPoints > 0){
+        EnergyPoints--;
+        std::cout << "ScavtTrap attacks " << target  << std::endl;
+    }
 }
 
 ScavTrap::~ScavTrap(){

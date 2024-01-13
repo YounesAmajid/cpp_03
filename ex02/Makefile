@@ -6,7 +6,7 @@
 #    By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/11 14:01:38 by yamajid           #+#    #+#              #
-#    Updated: 2024/01/12 11:55:13 by yamajid          ###   ########.fr        #
+#    Updated: 2024/01/12 14:52:34 by yamajid          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,18 +17,18 @@ RM		=	rm -f
 
 SRCS 	=	ClapTrap.cpp FragTrap.cpp ScavTrap.cpp main.cpp
 
-OBJS = $(SRCS:.cpp=.o)
+otherS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(Run) $(FLAGS) -o $(NAME) $(OBJS)
+$(NAME): $(otherS)
+	$(Run) $(FLAGS) -o $(NAME) $(otherS)
 
 %.o:  %.cpp ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
 	$(Run) $(FLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(otherS)
 fclean: clean
 	$(RM) $(NAME)
 

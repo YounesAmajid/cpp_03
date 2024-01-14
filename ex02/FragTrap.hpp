@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 20:00:41 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/12 11:55:20 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/14 11:44:56 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,7 @@ class FragTrap: public ClapTrap{
         FragTrap();
         FragTrap(std::string name);
         ~FragTrap();
+        FragTrap& operator=(const FragTrap& other);
+        FragTrap(const FragTrap& obj);
         void highFivesGuys(void); 
 };

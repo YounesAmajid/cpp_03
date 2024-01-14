@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 18:40:31 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/13 14:12:58 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/13 20:07:55 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,10 @@ int main (){
     test1.takeDamage(1);
     test1.beRepaired(1);
     std::cout << "------------------------------------" << std::endl;
-    std::cout << "------------------------------------" << std::endl;
     test2.guardGate();
     test2.attack("ClapTrap");
     test2.takeDamage(1);
     test2.beRepaired(1);
-    std::cout << "------------------------------------" << std::endl;
     std::cout << "------------------------------------" << std::endl;
     test3.attack("ClapTrap");
     test3.takeDamage(1);

@@ -6,7 +6,7 @@
 /*   By: yamajid <yamajid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 18:40:31 by yamajid           #+#    #+#             */
-/*   Updated: 2024/01/13 11:15:56 by yamajid          ###   ########.fr       */
+/*   Updated: 2024/01/13 20:27:30 by yamajid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main (){
     ScavTrap test;
     ScavTrap test3(test);
 
-    test2 = test;
+    // test2 = test;
     test2.attack("ClapTrap");
     test2.takeDamage(1);
     test2.beRepaired(1);
